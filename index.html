@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Invoice</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        table tr td img {
+            width: 250px;
+            height: 100px;
+            margin: 0 -95px 0 0px;
+        }
+
+        .bottom-table tr td {
+            border: 3px solid black;
+            font-size: 1.43rem;
+            line-height: 28px;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        .t1 {
+            padding-left: 10px;
+        }
+
+        .top-table tr td {
+            font-size: 1.43rem;
+            line-height: 28px;
+        }
+
+        .gap-col {
+            text-align: center;
+        }
+
+        .description {
+            text-align: center;
+            vertical-align: top;
+            font-weight: bold;
+        }
+
+        .space {
+            text-align: left;
+        }
+
+        .top-table {
+            margin-top: 5%;
+            border: none;
+            border-collapse: collapse;
+        }
+
+        .gaps {
+            padding-bottom: 550px;
+        }
+
+        .bottom-table .tax {
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        .comp {
+            width: 260px;
+        }
+
+        .space {
+            vertical-align: top;
+        }
+
+        .space1 {
+            vertical-align: top;
+        }
+
+        table .fcol {
+            padding-right: 10px;
+        }
+
+        table .gst {
+            text-align: right;
+            padding-top: 100px;
+        }
+
+        table .tcol {
+            width: 150px;
+            padding-bottom: 60px;
+        }
+
+        table .scol {
+            padding-left: 50px;
+        }
+
+        table .para {
+            padding-bottom: 30px;
+        }
+
+        table .workera {
+            font-weight: bold;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .dark {
+            font-weight: bold;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        .yellow {
+            color: orange;
+        }
+
+        footer {
+            text-align: center;
+            padding: 150px 0 50px 0;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <table width="100%" class="top-table">
+            <tr>
+                <td class="t1">From,</td>
+                <td rowspan="5"><img src="https://numasoft.org/images/logo_dark.png" alt="logo"></td>
+            </tr>
+            <tr>
+                <td class="t1">Company Name: Numa Soft Technology Services</td>
+            </tr>
+            <tr>
+                <td class="t1">Tel: +91 886 156 2478</td>
+            </tr>
+            <tr>
+                <td class="t1">Email: mailbox@numasoft.in</td>
+            </tr>
+            <tr>
+                <td class="t1">GSTIN: 29BBAPN5371B1ZT</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="t1">Address: 1032, Krishna Krupa, 3rd Floor, 13th Cross, Banashankari 2nd Stage,
+                    Bengaluru - 560070</td>
+            </tr>
+
+        </table>
+
+        <table border="1" width="100%" class="bottom-table">
+            <tr class="tax">
+                <td colspan="7" style="font-size: 2rem; padding: 5px;">TAX INVOICE</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="fcol">Addressed to:</td>
+                <td></td>
+                <td>Invoice No</td>
+                <td colspan="3">NSTS/23-24/004</td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="fcol comp">Company Name:</td>
+                <td class="workera">Workera Technology Pvt. Ltd.</td>
+                <td>Inv Date</td>
+                <td colspan="3">5th April 2023</td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="fcol">Contact Person:</td>
+                <td class="workera">Greesham & Rajeev Kumar</td>
+                <td>State</td>
+                <td colspan="3">Karnataka</td>
+            </tr>
+
+            <tr>
+                <td rowspan="3" colspan="2" class="gst"> GST No: </td>
+                <td rowspan="2" class="para">A1101 Princetown, Jalahalli West,
+                    Bangalore 560015</td>
+                <td>State Code</td>
+                <td colspan="3">29</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2" class="tcol">Ref:</td>
+                <td colspan="3" rowspan="2" class="para">As per Your Discussion followed by
+                    Mr. Nikhil</td>
+            </tr>
+
+            <tr>
+                <td>29AADCW3678E1ZZ</td>
+            </tr>
+
+
+            <tr class="description" style="background-color:#ccffff;">
+                <td class="slno" colspan="1">Sl. No.</td>
+                <td colspan="3" class="des">Description</td>
+                <td>Unit</td>
+                <td>Rate <br>(Rs.)</td>
+                <td>Amount <br> (Rs.)</td>
+            </tr>
+
+            <tr class="gap-col">
+                <td class="gaps space1" rowspan="7" style="font-weight: bold;">I.</td>
+                <td colspan="3" class="gaps space" rowspan="6">Web Consulting Charges</td>
+                <td class="gaps">1</td>
+                <td class="gaps">17000.00</td>
+                <td class="gaps">17000.00
+                </td>
+            </tr>
+
+            <tr class="right dark">
+                <!-- <td ></td> -->
+                <!-- <td colspan="3" rowspan="5">Web Consulting Charges</td> -->
+                <td colspan="2">Total Amt Before Tax</td>
+                <td>17000.00</td>
+            </tr>
+
+            <tr class="right">
+                <td colspan="2">CGST @ 9%</td>
+                <td>1530.00</td>
+            </tr>
+
+            <tr class="right">
+                <td colspan="2">SGST @ 9%</td>
+                <td>1530.00</td>
+            </tr>
+
+            <tr class="right">
+                <td colspan="2">GST</td>
+                <td>3060.00</td>
+            </tr>
+
+            <tr class="right dark">
+                <td colspan="2">Total Amt After Tax</td>
+                <td>20060.00</td>
+            </tr>
+
+            <tr>
+                <td colspan="6">Total in (words): INR Twenty thousand and sixty rupees only</td>
+            </tr>
+
+            <tr>
+                <td colspan="7">
+                    <span>* Estimated Time and Quantity : may vary depending upon actual volume of content. </span><br>
+                    <b>*</b><span class="yellow"> Banking Details are emailed along with this Invoice</span>
+                </td>
+            </tr>
+        </table>
+        <footer>Page 1 of 1</footer>
+    </div>
+</body>
+
+</html>
